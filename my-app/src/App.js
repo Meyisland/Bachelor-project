@@ -1,5 +1,6 @@
 
 import './App.css';
+import Form from ".//Form";
 
 function App() {
   return (
@@ -8,18 +9,20 @@ function App() {
 	<ul id="navigation">
 		<li><a href="#part_1">Startseite</a>
 		</li>
-		<li><a href="#part_2">HTML</a>
+		<li><a href="#part_2">Info</a>
 		</li>
-		<li><a href="#part_3">CSS</a>
+		<li><a href="#part_3">Annahmen</a>
 		</li>
-		<li><a href="#part_4">JavaScript</a>
+		<li><a href="#part_4">Prinzipien</a>
 		</li>
-		<li><a href="#part_5">SVG</a>
+		<li><a href="#part_5">Methodiken</a>
+		</li>
+    <li><a href="#part_6">Ende</a>
 		</li>
 	</ul>
 </nav>
 <section id="part_1" tabindex="1">
-	<h2>Webdesign</h2>
+	<h2>Unterbewusste Vorurteile</h2>
 	<p>Im modernen Webdesign kommt den verschiedenen Webtechniken jeweils eine bestimmte
 		Rolle zu.</p>
 	<ul>
@@ -35,20 +38,13 @@ function App() {
 </section>
 <section id="part_2" tabindex="2">
 	<h2>HTML</h2>
-	<p>Eine solche Auszeichnungssprache hat die Aufgabe,
-		die logischen Bestandteile eines textorientierten Dokuments zu beschreiben. Als
-		Auszeichnungssprache bietet HTML daher die Möglichkeit an, typische Elemente eines
-		textorientierten Dokuments, wie Überschriften, Textabsätze, Listen, Tabellen oder
-		Grafikreferenzen, als solche auszuzeichnen. </p>
+  <div>
+  
+    </div>
 </section>
 <section id="part_3" tabindex="3">
 	<h2>CSS</h2>
-	<p>Bei Cascading Stylesheets handelt sich um eine unmittelbare Ergänzungssprache, die
-		vorwiegend für HTML entwickelt wurde. Sie klinkt sich nahtlos in HTML ein und erlaubt
-		das beliebige Formatieren einzelner HTML-Elemente.</p>
-	<p>Mit Hilfe von Stylesheets können Sie beispielsweise festlegen, dass alle Überschriften
-		24 Punkt groß sind und mit einem Nachabstand von 16 Punkt und mit einer grünen
-		doppelten Rahmenlinie oberhalb dargestellt werden.</p>
+<Form/>
 	<p><code></code>
 	</p>
 	<p></p>
@@ -69,6 +65,13 @@ function App() {
 		bestimmtes HTML-Element klickt. </p>
 </section>
 <section id="part_5" tabindex="5">
+	<h2>SVG</h2>
+	<p>SVG ist das einzige im Web breit einsetzbare Vektorgrafik-Format.
+		Damit lassen sich in allen Viewport-Auflösungen gestochen scharfe Grafiken darstellen.</p>
+	<p>Man sollte es einsetzen, wenn sich die meisten Bildelemente mit SVG-Formen ausdrücken
+		lassen und eine clientseitige Skalierbarkeit oder eine Dynamik gewünscht ist.</p>
+</section>
+<section id="part_6" tabindex="6">
 	<h2>SVG</h2>
 	<p>SVG ist das einzige im Web breit einsetzbare Vektorgrafik-Format.
 		Damit lassen sich in allen Viewport-Auflösungen gestochen scharfe Grafiken darstellen.</p>

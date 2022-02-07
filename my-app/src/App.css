@@ -110,6 +110,10 @@ section p {
 	background: #e6f2f7;
 }
 
+#part_6 {
+  background: #a3a243;
+}
+
 @media screen and (max-width: 32em) {
 	section h2 {
 		font-size: 2em;
