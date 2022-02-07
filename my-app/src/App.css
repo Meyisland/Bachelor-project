@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+		scroll-snap-type: y mandatory;
+		scroll-behavior: smooth;
+		scroll-padding: 0;
+	}
+	section {
+		scroll-snap-align: start;
+		scroll-margin: 0;
+	}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html,
+body {
+	position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+section {
+	background: #fff;
+	min-height: 100vh;
+	padding: 2.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#navigation {
+	position: fixed;
+	top: 0;
+	left: calc(50% - 20em);
+	z-index: 99;
+	margin: 0 auto;
+	padding: 1em;
+	width: 40em;
+	background: transparent;
+	list-style: none;
+}
+
+#navigation li {
+	float: left;
+	height: 2em;
+	text-align: center;
+	margin: 0;
+	border: thin solid gold;
+	border-radius: .5em;
+	line-height: 150%;
+	font-family: Arial bold, Helvetica, sans-serif;
+	margin: 0 0 0 1em;
+}
+
+#navigation li a,
+#navigation li a:link,
+#navigation li a:visited {
+	text-decoration: none;
+	display: block;
+	height: 2em;
+	color: gold;
+	font-weight: bold;
+	padding: 0.1em 1em;
+}
+
+#navigation li a:hover,
+#navigation li a:focus,
+#navigation li a:active {
+	background: gold;
+	color: #00296d;
+	border-radius: .5em;
+}
+
+section > * {
+	max-width: 40em;
+	margin: 0.5em auto;
+}
+
+section h2 {
+	font-size: 4em;
+	text-align: center;
+	line-height: 2rem;
+	-webkit-backface-visibility: hidden;
+}
+
+section p {
+	text-align: justify;
+	-webkit-backface-visibility: hidden;
+}
+/* Colored sections */
+
+#part_1 {
+	background: #fffbf0;
+}
+
+#part_2 {
+	background: #ebf5d7;
+}
+
+#part_2 img,
+#part_5 img {
+	float: right;
+	margin-left: 1em;
+}
+
+#part_3 {
+	background: #ffebe6;
+}
+
+#part_4 {
+	background: #e6f2f7;
+}
+
+@media screen and (max-width: 32em) {
+	section h2 {
+		font-size: 2em;
+	}
+	section p {
+		width: 90%;
+		left: 5%;
+		margin-top: 0;
+	}
 }
