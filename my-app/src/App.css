@@ -25,13 +25,16 @@ section {
 }
 
 #navigation {
+  display: flex;
 	position: fixed;
-	top: 0;
-	left: calc(50% - 20em);
+  flex-direction: column;
+  justify-content: space-evenly;
+	top: 25vh;
+	/* left: calc(50% - 20em); */
 	z-index: 99;
 	margin: 0 auto;
 	padding: 1em;
-	width: 40em;
+	width: 10em;
 	background: transparent;
 	list-style: none;
 }
@@ -45,7 +48,7 @@ section {
 	border-radius: .5em;
 	line-height: 150%;
 	font-family: Arial bold, Helvetica, sans-serif;
-	margin: 0 0 0 1em;
+	margin: 2em 0 0 1em;
 }
 
 #navigation li a,
