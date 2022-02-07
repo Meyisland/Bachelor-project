@@ -29,10 +29,12 @@ section {
 	position: fixed;
   flex-direction: column;
   justify-content: space-evenly;
-	top: 25vh;
-	/* left: calc(50% - 20em); */
+	top: 20vh;
+  /* align-items: center; */
+  justify-content: center;
+  align-content: flex-start;
 	z-index: 99;
-	margin: 0 auto;
+	margin: 0 0 auto auto;
 	padding: 1em;
 	width: 10em;
 	background: transparent;
