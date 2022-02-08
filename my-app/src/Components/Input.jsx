@@ -1,4 +1,5 @@
 
+import './Input.css';
 import React, { Component } from "react";
 
 class Input extends Component {
@@ -6,7 +7,7 @@ class Input extends Component {
     super(props);
 
     this.state = {
-    FirstAnnahme: "",
+    firstAnnahme: "",
       submitedFirst: ""
     };
   }
@@ -16,20 +17,20 @@ class Input extends Component {
     this.setState(() => ({ firstAnnahme }));
   };
   displayNameHandler = () => {
-    this.setState(prevState => ({ submitedFirstAnnahme: prevState.firstAnnahme }));
+    this.props.submitFirstAnnahme(this.state.firstAnnahme);
   };
 
   render() {
     return (
       <div>
         <form>
-          <label>Enter the Name</label>
+          <label>Gebe deine erste Annahme ein</label>
           <input type="text" name="firstAnnahme" onChange={this.inputChange} />
           <button type="button" onClick={this.displayNameHandler}>
             Submit
           </button>
           <p>
-            {this.state.submitedFirstAnnahme && this.state.submitedFirstAnnahme}
+            
           </p>
         </form>
       </div>
