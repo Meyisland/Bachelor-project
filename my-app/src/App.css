@@ -30,7 +30,6 @@ section {
   flex-direction: column;
   justify-content: space-evenly;
 	top: 20vh;
-  /* align-items: center; */
   justify-content: center;
   align-content: flex-start;
 	z-index: 99;

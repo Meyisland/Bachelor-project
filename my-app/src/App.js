@@ -1,6 +1,7 @@
 
 import './App.css';
 import Form from ".//Form";
+import Input from './/Input';
 
 function App() {
   return (
@@ -37,46 +38,28 @@ function App() {
 	</p>
 </section>
 <section id="part_2" tabindex="2">
-	<h2>HTML</h2>
+	<h2>Erste Annahmen</h2>
   <div>
-  
+  <Input/>
     </div>
 </section>
 <section id="part_3" tabindex="3">
 	<h2>CSS</h2>
-<Form/>
 	<p><code></code>
 	</p>
 	<p></p>
 </section>
 <section id="part_4" tabindex="4">
-	<h2>JavaScript</h2>
-	<p>JavaScripte haben Zugriff auf das Browserfenster und das darin angezeigte HTML-Dokument.
-		Ihre wichtigste Aufgabe besteht darin, auf Benutzereingaben im Dokument zu reagieren
-		(z.B. klickt der Benutzer auf ein Element oder gibt einen Text in ein Formularfeld
-		ein). JavaScripte können daraufhin Änderungen im gegenwärtig angezeigten HTML-Dokument
-		vornehmen. Diese Änderungen finden nur im Browser, genauer gesagt im Arbeitsspeicher
-		des Rechners statt, während das Dokument auf dem Web-Server unangetastet bleibt.</p>
-	<p> Die Änderungen können sowohl den Inhalt als auch die Darstellung des Dokuments betreffen.
-		Auf diese Weise kann ein Dokument interaktiv und »dynamisch« gestaltet werden.
-		Das bedeutet, es kann auf Benutzereingaben reagieren und sich ändern, ohne dass
-		ein neues Dokument vom Web-Server abgerufen werden muss. Beispielsweise können
-		Zusatzinformationen eingeblendet werden, sobald der Anwender mit der Maus auf ein
-		bestimmtes HTML-Element klickt. </p>
+	<h2>Test</h2>
+
 </section>
 <section id="part_5" tabindex="5">
-	<h2>SVG</h2>
-	<p>SVG ist das einzige im Web breit einsetzbare Vektorgrafik-Format.
-		Damit lassen sich in allen Viewport-Auflösungen gestochen scharfe Grafiken darstellen.</p>
-	<p>Man sollte es einsetzen, wenn sich die meisten Bildelemente mit SVG-Formen ausdrücken
-		lassen und eine clientseitige Skalierbarkeit oder eine Dynamik gewünscht ist.</p>
+	<h2>Test</h2>
+	
 </section>
 <section id="part_6" tabindex="6">
-	<h2>SVG</h2>
-	<p>SVG ist das einzige im Web breit einsetzbare Vektorgrafik-Format.
-		Damit lassen sich in allen Viewport-Auflösungen gestochen scharfe Grafiken darstellen.</p>
-	<p>Man sollte es einsetzen, wenn sich die meisten Bildelemente mit SVG-Formen ausdrücken
-		lassen und eine clientseitige Skalierbarkeit oder eine Dynamik gewünscht ist.</p>
+	<h2>Annahmen</h2>
+	
 </section>
 
     </div>
