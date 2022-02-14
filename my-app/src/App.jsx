@@ -2,11 +2,15 @@ import "./App.css";
 import React, { Component } from "react";
 import Input from "./Components/Input";
 import Menu from "./Components/Menu";
+import Cards from "./Components/Cards";
+import Demo1 from "./Components/Demo1";
 
 class App extends Component {
   constructor(props) {
     super(props);
-	this.state = {submitedFirstAnnahme:""}
+    this.state = {
+      submitedFirstAnnahme: "",
+    };
   }
 
   render() {
@@ -34,20 +38,20 @@ class App extends Component {
           <div>
             <Input
               submitFirstAnnahme={(annahme) =>
-                this.setState({submitedFirstAnnahme:annahme})
+                this.setState({ submitedFirstAnnahme: annahme })
               }
             />
           </div>
         </section>
         <section id="part_3" tabIndex="3">
-          <h2>CSS</h2>
-          <p>
-            <code></code>
-          </p>
-          <p></p>
+          <h2>Wähle einen Bias</h2>
+          <div>
+            <Cards />
+          </div>
         </section>
         <section id="part_4" tabIndex="4">
           <h2>Test</h2>
+          <div></div>
         </section>
         <section id="part_5" tabIndex="5">
           <h2>Test</h2>
