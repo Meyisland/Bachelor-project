@@ -1,55 +1,64 @@
 import "./Cards.css";
 import React, { Component } from "react";
-import Demo1 from "./Demo1";
+import Card from "./Card";
 
-import { render } from "@testing-library/react";
-import NameForm from "./Demo1";
+const democardstates = {
+  default: "default",
+  question: "question",
+  answer: "answer",
+  finish: "finish",
+};
 
 class Cards extends Component {
   constructor(props) {
     super(props);
     this.state = {
       name: "React",
-      showHideDemo1: false,
+      showDemo1: democardstates.question,
+      cardStates: {
+        confirmation: democardstates.default,
+        consenus: democardstates.default,
+        anchoring: democardstates.default,
+      },
     };
-    this.hideComponent = this.hideComponent.bind(this);
   }
 
-  hideComponent(name) {
-    console.log(name);
-    switch (name) {
-      case "showHideDemo1":
-        this.setState({ showHideDemo1: !this.state.showHideDemo1 });
-      default:
-    }
+  setCardState(name, cardState) {
+    console.log(name, cardState);
+    this.setState((state) => ({
+      cardStates: { ...state.cardStates, [name]: cardState },
+    }));
   }
 
   render() {
-    const { showHideDemo1 } = this.state;
+    const { showDemo1, cardStates } = this.state;
 
     return (
       <div class="wrapper">
-        <div class="card">
-          <h3>Confirmation bias</h3>
-          <p>insert fancy Grapic here</p>
-          {showHideDemo1 && <NameForm />}
-          <a
-            class="button"
-            // href="#part_4"
-            onClick={() => this.hideComponent("showHideDemo1")}
-          >
-            GO
-          </a>{" "}
-          {/* <button onclick="href = #part_2"> GO</button>{" "} */}
-        </div>
-
-        <div class="card">
+        <Card
+          name={"confirmation"}
+          status={cardStates.confirmation}
+          title={"confirmation Bias"}
+          questionText={"Führe dise Reihenfolge weiter.."}
+          setCardState={(name, state) => this.setCardState(name, state)}
+        />
+        <Card
+          name={"consenus"}
+          status={cardStates.consenus}
+          title={"False-consensus bias"}
+        />
+        <Card
+          name={"anchoring"}
+          status={cardStates.anchoring}
+          title={"Anchoring bias"}
+        />
+        {/* <div class="card">
           <h3>False-consensus bias</h3>
           <p>insert fancy Grapic here</p>
 
           <button
             href="#part_4"
-            onClick={() => this.hideComponent("showHideDemo1")}
+            onClick={() => this.hideComponent("showDemo1")}
           >
             Click to hide Demo1 component
           </button>
@@ -59,7 +68,7 @@ class Cards extends Component {
           <h3>Anchoring bias</h3>
           <p>insert fancy Grapic here</p>
           <button>GO</button>
-        </div>
+        </div> */}
       </div>
     );
   }

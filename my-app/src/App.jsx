@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Input from "./Components/Input";
 import Menu from "./Components/Menu";
 import Cards from "./Components/Cards";
-import Demo1 from "./Components/Demo1";
+import Question from "./Components/Cards/Question";
 
 class App extends Component {
   constructor(props) {

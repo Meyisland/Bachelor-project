@@ -1,6 +1,6 @@
 // import React, { Component } from "react";
 
-// class Demo1 extends Component {
+// class Question extends Component {
 //   constructor() {
 //     super();
 //     this.state = {
@@ -11,13 +11,13 @@
 //   render() {
 //     return (
 //       <div>
-//         <p>This is Demo1 component</p>
+//         <p>This is Question component</p>
 
 //         <button>
 //           <a
 //             class="button"
 //             href="#part_3"
-//             onClick={() => this.hideComponent("showHideDemo1")}
+//             onClick={() => this.hideComponent("showHid Question")}
 //           >
 //             finish
 //           </a>{" "}
@@ -29,7 +29,7 @@
 
 import React from "react";
 
-class NameForm extends React.Component {
+class Question extends React.Component {
   constructor(props) {
     super(props);
     this.state = { value: "" };
@@ -43,14 +43,15 @@ class NameForm extends React.Component {
   }
 
   handleSubmit(event) {
-    alert("Das Ergebnis wurde abgeschickt: " + this.state.value);
+    this.setCardState(this.props.name, "answer");
     event.preventDefault();
   }
 
   render() {
+    const { questionText } = this.props;
     return (
       <div>
-        <p>Setze diese Zahlenreienfolge fort: 2,4,6...</p>
+        <p>{questionText}</p>
 
         <form onSubmit={this.handleSubmit}>
           <label>
@@ -71,4 +72,4 @@ class NameForm extends React.Component {
   }
 }
 
-export default NameForm;
+export default Question;
