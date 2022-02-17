@@ -39,7 +39,7 @@ class Cards extends Component {
           name={"confirmation"}
           status={cardStates.confirmation}
           title={"confirmation Bias"}
-          questionText={"Führe dise Reihenfolge weiter.."}
+          questionText={"Führe diese Reihenfolge weiter: 2,4,6 ..."}
           setCardState={(name, state) => this.setCardState(name, state)}
         />
         <Card
