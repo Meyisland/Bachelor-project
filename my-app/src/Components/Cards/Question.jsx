@@ -12,6 +12,7 @@ class Question extends React.Component {
 
   handleChange(event) {
     let str = event.target.value;
+    //ersetzt alle Zahlen von o-9 durch nichts
     let newDigits = str.replace(/[^0-9,]/g, "");
     this.setState({ value: newDigits });
   }
@@ -36,24 +37,6 @@ class Question extends React.Component {
       console.log("wrong");
     }
   }
-
-  // function validate(result) {
-  //   // we are going to store errors for all fields
-  //   // in a signle array
-  //   const errors = [];
-
-  //   if (result.length < 5) {
-  //     errors.push("Result should be at least 5 characters long");
-  //   }
-  //   if (result.split("").filter((x) => x === ",").length !== 1) {
-  //     errors.push("Email should contain a ,");
-  //   }
-  //   if (result.indexOf(",") === 1) {
-  //     errors.push("Result should contain at least two commas");
-  //   }
-
-  //   return errors;
-  // }
 
   render() {
     const { questionText, setCardState, name } = this.props;
