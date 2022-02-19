@@ -20,6 +20,7 @@ class Question extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     let str = this.state.value;
+    let nameARR = str.split(",");
     // console.log(event);
     if (
       // exact 2 kommas
@@ -33,10 +34,27 @@ class Question extends React.Component {
     ) {
       this.setState({ showResultsBt: true });
       console.log("right");
+      console.log(nameARR);
+      console.log(nameARR[0], nameARR[1], nameARR[2]);
     } else {
       console.log("wrong");
     }
+
+    if (
+      Number(nameARR[0]) < Number(nameARR[1]) &&
+      Number(nameARR[1]) < Number(nameARR[2])
+    ) {
+      alert("This is right");
+    } else {
+      alert("this is wrong");
+    }
   }
+
+  // validateForm() {
+  //   var x = document.forms["frmOrder"]["txtTotal"].value;
+  //   var y = document.forms["frmOrder"]["totalpoints"].value;
+
+  // }
 
   render() {
     const { questionText, setCardState, name } = this.props;
