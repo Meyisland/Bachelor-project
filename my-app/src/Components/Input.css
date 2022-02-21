@@ -1,0 +1,9 @@
+#AnmeldeForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-submit {
+  max-width: 100px;
+  align-self: center;
+}

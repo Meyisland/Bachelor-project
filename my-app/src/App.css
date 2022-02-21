@@ -1,68 +1,68 @@
 @media (prefers-reduced-motion: no-preference) {
-	html,
-	body {
-		margin: 0;
-		padding: 0;
-		scroll-snap-type: y mandatory;
-		scroll-behavior: smooth;
-		scroll-padding: 0;
-	}
-	section {
-		scroll-snap-align: start;
-		scroll-margin: 0;
-	}
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scroll-padding: 0;
+  }
+  section {
+    scroll-snap-align: start;
+    scroll-margin: 0;
+  }
 }
 
 html,
 body {
-	position: relative;
+  position: relative;
+  overflow: hidden;
 }
 
 section {
-	background: #fff;
-	min-height: 100vh;
-	padding: 2.5em;
+  background: #fff;
+  min-height: 100vh;
+  padding: 2.5em;
 }
 
-
 section > * {
-	max-width: 40em;
-	margin: 0.5em auto;
+  max-width: 40em;
+  margin: 0.5em auto;
 }
 
 section h2 {
-	font-size: 4em;
-	text-align: center;
-	line-height: 2rem;
-	-webkit-backface-visibility: hidden;
+  font-size: 4em;
+  text-align: center;
+  line-height: 2rem;
+  -webkit-backface-visibility: hidden;
 }
 
 section p {
-	text-align: justify;
-	-webkit-backface-visibility: hidden;
+  text-align: justify;
+  -webkit-backface-visibility: hidden;
 }
 /* Colored sections */
 
 #part_1 {
-	background: #fffbf0;
+  background: #fffbf0;
 }
 
 #part_2 {
-	background: #ebf5d7;
+  background: #ebf5d7;
 }
 
 #part_2 img,
 #part_5 img {
-	float: right;
-	margin-left: 1em;
+  float: right;
+  margin-left: 1em;
 }
 
 #part_3 {
-	background: #ffebe6;
+  background: #ffebe6;
 }
 
 #part_4 {
-	background: #e6f2f7;
+  background: #e6f2f7;
 }
 
 #part_6 {
@@ -70,12 +70,12 @@ section p {
 }
 
 @media screen and (max-width: 32em) {
-	section h2 {
-		font-size: 2em;
-	}
-	section p {
-		width: 90%;
-		left: 5%;
-		margin-top: 0;
-	}
+  section h2 {
+    font-size: 2em;
+  }
+  section p {
+    width: 90%;
+    left: 5%;
+    margin-top: 0;
+  }
 }

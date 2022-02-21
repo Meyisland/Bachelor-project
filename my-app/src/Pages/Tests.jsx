@@ -1,6 +1,6 @@
-import "./Cards.css";
+import "./Tests.css";
 import React, { Component } from "react";
-import Card from "./Card";
+import Card from "../Components/Card";
 
 const democardstates = {
   default: "default",
@@ -9,7 +9,7 @@ const democardstates = {
   finish: "finish",
 };
 
-class Cards extends Component {
+class Tests extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -34,25 +34,28 @@ class Cards extends Component {
     const { showDemo1, cardStates } = this.state;
 
     return (
-      <div class="wrapper">
-        <Card
-          name={"confirmation"}
-          status={cardStates.confirmation}
-          title={"confirmation Bias"}
-          questionText={"Führe diese Reihenfolge weiter: 2,4,6 ..."}
-          setCardState={(name, state) => this.setCardState(name, state)}
-        />
-        <Card
-          name={"consenus"}
-          status={cardStates.consenus}
-          title={"False-consensus bias"}
-        />
-        <Card
-          name={"anchoring"}
-          status={cardStates.anchoring}
-          title={"Anchoring bias"}
-        />
-        {/* <div class="card">
+      <section id={"part_3"}>
+        <div className={"wrapper"}>
+          <Card
+            name={"confirmation"}
+            status={cardStates.confirmation}
+            title={"confirmation Bias"}
+            questionText={"Führe diese Reihenfolge weiter: 2,4,6 ..."}
+            answerText={"Hier stehen infos über diesen Bias ..."}
+            setCardState={(name, state) => this.setCardState(name, state)}
+          />
+          <Card
+            name={"consenus"}
+            status={cardStates.consenus}
+            title={"False-consensus bias"}
+            setCardState={(name, state) => this.setCardState(name, state)}
+          />
+          <Card
+            name={"anchoring"}
+            status={cardStates.anchoring}
+            title={"Anchoring bias"}
+          />
+          {/* <div class="card">
           <h3>False-consensus bias</h3>
           <p>insert fancy Grapic here</p>
 
@@ -69,8 +72,9 @@ class Cards extends Component {
           <p>insert fancy Grapic here</p>
           <button>GO</button>
         </div> */}
-      </div>
+        </div>
+      </section>
     );
   }
 }
-export default Cards;
+export default Tests;

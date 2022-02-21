@@ -1,7 +1,8 @@
-import "./Cards.css";
+import "./Card.css";
 import React, { Component } from "react";
 import Default from "./Cards/Default";
 import Question from "./Cards/Question";
+import Finish from "./Cards/Finish";
 
 class Card extends Component {
   constructor(props) {
@@ -9,8 +10,16 @@ class Card extends Component {
   }
 
   render() {
-    const { name, title, image, button, status, questionText, setCardState } =
-      this.props;
+    const {
+      name,
+      title,
+      image,
+      button,
+      status,
+      questionText,
+      setCardState,
+      answerText,
+    } = this.props;
     return (
       <div class="card">
         {status == "default" && (
@@ -27,6 +36,15 @@ class Card extends Component {
             name={name}
             title={title}
             questionText={questionText}
+            setCardState={setCardState}
+          />
+        )}
+        {status == "finish" && (
+          <Finish
+            name={name}
+            // title={title}
+            // questionText={questionText}
+            answerText={answerText}
             setCardState={setCardState}
           />
         )}

@@ -50,12 +50,6 @@ class Question extends React.Component {
     }
   }
 
-  // validateForm() {
-  //   var x = document.forms["frmOrder"]["txtTotal"].value;
-  //   var y = document.forms["frmOrder"]["totalpoints"].value;
-
-  // }
-
   render() {
     const { questionText, setCardState, name } = this.props;
     const { showResultsBt } = this.state;
@@ -82,7 +76,7 @@ class Question extends React.Component {
               <a
                 class="button"
                 // href="#part_4"
-                onClick={() => setCardState(name, "answer")}
+                onClick={() => setCardState(name, "finish")}
               >
                 Show Answer
               </a>

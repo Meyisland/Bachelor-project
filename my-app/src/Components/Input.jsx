@@ -1,5 +1,4 @@
-
-import './Input.css';
+import "./Input.css";
 import React, { Component } from "react";
 
 class Input extends Component {
@@ -7,31 +6,56 @@ class Input extends Component {
     super(props);
 
     this.state = {
-    firstAnnahme: "",
-      submitedFirst: ""
+      firstAnnahme: "",
+      language: "",
+      submitedFirst: "",
     };
   }
 
-  inputChange = e => {
+  inputChange = (e) => {
     const firstAnnahme = e.target.value;
-    this.setState(() => ({ firstAnnahme }));
+    this.setState({ firstAnnahme });
   };
+
   displayNameHandler = () => {
-    this.props.submitFirstAnnahme(this.state.firstAnnahme);
+    const { firstAnnahme, language } = this.state;
+    this.props.submitForm({ firstAnnahme: firstAnnahme, language: language });
+    console.log("huhu");
   };
 
   render() {
     return (
       <div>
-        <form>
-          <label>Gebe deine erste Annahme ein</label>
-          <input type="text" name="firstAnnahme" onChange={this.inputChange} />
-          <button type="button" onClick={this.displayNameHandler}>
+        <form id="AnmeldeForm">
+          <div>
+            <label>Gebe deine erste Annahme ein</label>
+            <input
+              type="text"
+              name="firstAnnahme"
+              onChange={this.inputChange}
+            />
+          </div>
+          <div>
+            <select
+              id="languages"
+              onChange={(e) => this.setState({ language: e.target.value })}
+            >
+              <option value="german">German</option>
+              <option value="english">english</option>
+              <option value="elvish">elvish</option>
+              <option value="lolspeak">lolspeak</option>
+            </select>
+          </div>
+
+          <a
+            href="#part_3"
+            class="button-submit"
+            type="button"
+            onClick={this.displayNameHandler}
+          >
             Submit
-          </button>
-          <p>
-            
-          </p>
+          </a>
+          <p></p>
         </form>
       </div>
     );
