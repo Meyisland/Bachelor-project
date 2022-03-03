@@ -1,6 +1,6 @@
 import './App.css'
 import React, { Component } from 'react'
-import { io } from 'socket.io-client'
+// import { io } from 'socket.io-client'
 
 import Menu from './Components/Menu'
 import Tests from './Pages/Tests'
