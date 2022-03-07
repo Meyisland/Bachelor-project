@@ -14,9 +14,9 @@ class Austausch extends Component {
 	render() {
 		return (
 			<>
-				<Chat />
-				<Match language={this.props.language} />
 				<section id="part_5" tabIndex="5">
+					<Match language={this.props.language} />
+					<Chat />
 					<h2>Test</h2>
 					{this.props.firstAnnahme}
 					{this.props.language}
