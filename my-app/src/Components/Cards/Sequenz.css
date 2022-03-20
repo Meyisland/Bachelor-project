@@ -1,0 +1,21 @@
+.button {
+	background-color: var(--maincolor);
+	font-weight: 700;
+	letter-spacing: 2px;
+	border: none;
+	color: #fff;
+	padding: 0.7em 1.2em;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: calc(var(--cardm) * 0.5);
+	text-transform: uppercase;
+	margin-top: auto;
+}
+
+.ShowFinishButton {
+	justify-content: space-between;
+	flex-direction: column;
+	min-height: 20em;
+	display: flex;
+}
