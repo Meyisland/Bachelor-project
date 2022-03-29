@@ -20,7 +20,7 @@ body {
 }
 
 section {
-	background: #fff;
+	background: #ffff5e;
 	min-height: 100vh;
 	padding: 2.5em;
 	box-sizing: border-box;
@@ -59,7 +59,7 @@ section p {
 }
 
 #part_3 {
-	background: #ffebe6;
+	background: #ffff5e;
 }
 
 #part_4 {
