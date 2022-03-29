@@ -8,16 +8,22 @@ class Austausch extends Component {
 	constructor(props) {
 		super(props)
 
-		this.state = {}
+		this.state = {
+			firstAnnahme: '',
+			language: '',
+		}
 	}
 
 	render() {
 		return (
 			<>
-				<section id="part_5" tabIndex="5">
+				<section id="chat" tabIndex="5">
 					<Match language={this.props.language} />
-					<Chat />
-					{/* <h2>Test</h2> */}
+					<Chat
+						language={this.props.language}
+						firstAnnahme={this.props.firstAnnahme}
+					/>
+
 					{this.props.firstAnnahme}
 					{this.props.language}
 				</section>

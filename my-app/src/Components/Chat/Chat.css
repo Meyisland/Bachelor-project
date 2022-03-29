@@ -67,3 +67,7 @@
 #messages > li:nth-child(odd) {
 	background: #efefef;
 }
+
+h1 {
+	color: #333;
+}

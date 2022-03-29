@@ -23,7 +23,7 @@ class App extends Component {
 			<div className="App">
 				<Menu
 					activeSection={this.state.activeSection}
-					changeSection={(section) => this.setState({ section })}
+					changeSection={(section) => this.setState({ activeSection: section })}
 				/>
 
 				<Startseite />

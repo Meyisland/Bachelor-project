@@ -18,6 +18,10 @@ class Chat extends Component {
 			messages: [],
 			input: '',
 			socket: io(),
+
+			firstAnnahme: '',
+			language: '',
+
 			// io: new Server(server),
 			// app: express(),
 			// server: http.createServer(app),
@@ -53,6 +57,7 @@ class Chat extends Component {
 
 	render() {
 		const { messages } = this.state
+		// const { firstAnnahme } = this.props
 		let messageItems = messages.map((msg, index) => <li>{index + msg}</li>)
 		// for (let message of messages) {
 		// 	const messageItem = <li>{message}</li>
@@ -69,6 +74,7 @@ class Chat extends Component {
 					/>
 					<button>Send</button>
 				</form>
+				<p>{this.props.firstAnnahme}</p>
 			</div>
 		)
 	}
