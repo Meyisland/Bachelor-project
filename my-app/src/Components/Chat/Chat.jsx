@@ -59,7 +59,7 @@ class Chat extends Component {
 		// 	messageItems = [...messageItems, messageItem]
 		// }
 		return (
-			<>
+			<div class="container">
 				<ul id="messages">{messageItems}</ul>
 				<form onSubmit={(e) => this.handleSubmit(e)} id="form" action="">
 					<input
@@ -69,7 +69,7 @@ class Chat extends Component {
 					/>
 					<button>Send</button>
 				</form>
-			</>
+			</div>
 		)
 	}
 }

@@ -17,7 +17,7 @@ class Austausch extends Component {
 				<section id="part_5" tabIndex="5">
 					<Match language={this.props.language} />
 					<Chat />
-					<h2>Test</h2>
+					{/* <h2>Test</h2> */}
 					{this.props.firstAnnahme}
 					{this.props.language}
 				</section>
