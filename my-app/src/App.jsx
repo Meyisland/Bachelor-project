@@ -21,7 +21,11 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<Menu />
+				<Menu
+					activeSection={this.state.activeSection}
+					changeSection={(section) => this.setState({ section })}
+				/>
+
 				<Startseite />
 				<Anmeldung submitForm={(formData) => this.setState(formData)} />
 				<Tests />

@@ -7,8 +7,8 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: auto;
-	border: #333;
-	background-color: aqua;
+	border-radius: 5% 5% 5% 5%;
+	background-color: #fff;
 }
 
 #form {

@@ -60,7 +60,7 @@ class Chat extends Component {
 		// }
 		return (
 			<div class="container">
-				<ul id="messages">{messageItems}</ul>
+				<div id="messages">{messageItems}</div>
 				<form onSubmit={(e) => this.handleSubmit(e)} id="form" action="">
 					<input
 						onChange={(e) => this.handleChange(e)}

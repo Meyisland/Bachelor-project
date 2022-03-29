@@ -10,11 +10,13 @@
 	section {
 		scroll-snap-align: start;
 		scroll-margin: 0;
+		position: relative;
 	}
 }
 
 html,
 body {
+	/* padding-top: 100px; */
 	position: relative;
 	overflow: hidden;
 }
@@ -22,7 +24,7 @@ body {
 section {
 	background: #ffff5e;
 	min-height: 100vh;
-	padding: 2.5em;
+	padding: 10em;
 	box-sizing: border-box;
 }
 
@@ -44,7 +46,7 @@ section p {
 }
 /* Colored sections */
 
-#part_1 {
+#Startseite {
 	background: #fffbf0;
 }
 
@@ -58,7 +60,7 @@ section p {
 	margin-left: 1em;
 }
 
-#part_3 {
+#test {
 	background: #ffff5e;
 }
 
@@ -66,7 +68,7 @@ section p {
 	background: #e6f2f7;
 }
 
-#part_6 {
+#chat {
 	background: #a3a243;
 }
 
