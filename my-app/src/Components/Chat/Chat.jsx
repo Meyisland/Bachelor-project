@@ -57,6 +57,7 @@ class Chat extends Component {
 
 	render() {
 		const { messages } = this.state
+		console.log(this.props.firstAnnahme)
 		// const { firstAnnahme } = this.props
 		let messageItems = messages.map((msg, index) => <li>{index + msg}</li>)
 		// for (let message of messages) {

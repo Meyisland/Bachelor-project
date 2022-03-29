@@ -8,6 +8,7 @@ import Question from './Components/Cards/Question'
 import Anmeldung from './Pages/Anmeldung'
 import Startseite from './Pages/Startseite'
 import Austausch from './Pages/Austausch'
+import Chat from './Components/Chat/Chat'
 
 class App extends Component {
 	constructor(props) {
@@ -27,6 +28,7 @@ class App extends Component {
 				/>
 
 				<Startseite />
+
 				<Anmeldung submitForm={(formData) => this.setState(formData)} />
 				<Tests />
 				<Austausch
