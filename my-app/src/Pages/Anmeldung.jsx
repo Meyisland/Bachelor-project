@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Input from '../Components/Input'
+import './Anmeldung.css'
 
 class Anmeldung extends Component {
 	state = {}

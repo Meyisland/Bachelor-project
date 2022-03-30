@@ -78,7 +78,7 @@ class Chat extends Component {
 					/>
 					<button>Send</button>
 				</form>
-				<p>{this.props.firstAnnahme}</p>
+				{/* <p>{this.props.firstAnnahme}</p> */}
 			</div>
 		)
 	}

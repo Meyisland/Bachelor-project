@@ -6,11 +6,13 @@
 		scroll-snap-type: y mandatory;
 		scroll-behavior: smooth;
 		scroll-padding: 0;
+		font-family: 'PoppinsRegular';
 	}
 	section {
 		scroll-snap-align: start;
 		scroll-margin: 0;
 		position: relative;
+		font-family: 'PoppinsRegular';
 	}
 }
 
@@ -69,7 +71,7 @@ section p {
 }
 
 #chat {
-	background: #a3a243;
+	background: #ffff5e;
 }
 
 @media screen and (max-width: 32em) {
