@@ -4,6 +4,7 @@ import Default from './Cards/Default'
 import Question from './Cards/Question'
 import Finish from './Cards/Finish'
 import Sequenz from './Cards/Sequenz'
+import FinishWrong from './Cards/FinishWrong'
 
 class Card extends Component {
 	constructor(props) {
@@ -20,6 +21,7 @@ class Card extends Component {
 			questionText,
 			setCardState,
 			answerText,
+			answerTextWrong,
 		} = this.props
 		return (
 			<div class="card">
@@ -46,6 +48,15 @@ class Card extends Component {
 						// title={title}
 						// questionText={questionText}
 						answerText={answerText}
+						setCardState={setCardState}
+					/>
+				)}
+				{status == 'finishWrong' && (
+					<FinishWrong
+						name={name}
+						// title={title}
+						// questionText={questionText}
+						answerTextWrong={answerTextWrong}
 						setCardState={setCardState}
 					/>
 				)}

@@ -8,6 +8,7 @@ class Sequenz extends React.Component {
 			name: 'React',
 			value: '',
 			showFinishBt: false,
+			showWrongFinishBt: false,
 		}
 		this.onValueChange = this.onValueChange.bind(this)
 		this.formSubmit = this.formSubmit.bind(this)
@@ -18,10 +19,19 @@ class Sequenz extends React.Component {
 			selectedOption: event.target.value,
 		})
 
-		if (event.target.value == 'Male') {
+		if (event.target.value === 'Male') {
 			this.setState({ showFinishBt: true })
+			// this.setState({ showWrongFinishBt: false })
 			console.log(event.target.value)
 		} else this.setState({ showFinishBt: false })
+		console.log(event.target.value)
+
+		// if (event.target.value === 'Female' || 'Other') {
+		// 	this.setState({ showWrongFinishBt: true })
+		// 	this.setState({ showFinishBt: false })
+		// 	console.log(event.target.value)
+		// }
+		// } else this.setState({ showWrongFinishBt: false })
 		// console.log(event.target.value)
 	}
 
@@ -31,7 +41,7 @@ class Sequenz extends React.Component {
 
 	render() {
 		const { name, setCardState } = this.props
-		const { showFinishBt } = this.state
+		const { showFinishBt, showWrongFinishBt } = this.state
 
 		return (
 			<div>
@@ -71,20 +81,21 @@ class Sequenz extends React.Component {
 						</label>
 					</div>
 					<div>Selected option is : {this.state.selectedOption}</div>
-					<div class="ShowFinishButton">
-						<button
-							class="button"
-							onClick={() => setCardState(name, 'default')}
-						>
-							Finish2
-						</button>
-					</div>
 
-					{showFinishBt && (
+					{showFinishBt ? (
 						<div class="ShowFinishButton">
 							<button
 								class="button"
 								onClick={() => setCardState(name, 'finish')}
+							>
+								Finish2
+							</button>
+						</div>
+					) : (
+						<div class="ShowFinishButton">
+							<button
+								class="button"
+								onClick={() => setCardState(name, 'finishWrong')}
 							>
 								Finish
 							</button>
