@@ -1,13 +1,21 @@
 import React, { Component } from 'react'
+import './Startseite.css'
 
 class Startseite extends Component {
 	state = {}
 	render() {
 		return (
 			<section id="startseite" tabIndex="1">
-				<h2>Unterbewusste Vorurteile</h2>
-				<p>Unterbewusste Vorurteile betreffen jeden Designer</p>
-				<ul>
+				<h2 class="black">The Big B</h2>
+				<p class="black">
+					Das Projekt richtet sich an Designende, die dafür offen sind, über
+					sich selbst zu reflektieren und bereit dazu sind, sich mit ihren
+					eigenen Biases auseinander zu setzten. Das Projekt dient als
+					Unterstützung darin, auf die eigenen Biases aufmerksam zu machen und
+					darüber aufzuklären welchen Einfluss diese auf den Designprozess
+					nehmen können.
+				</p>
+				{/* <ul>
 					<li>
 						<a href="#part_2">Info</a>
 					</li>
@@ -18,7 +26,7 @@ class Startseite extends Component {
 						<a href="#part_4">Prinzipien</a>
 					</li>
 				</ul>
-				<p></p>
+				<p></p> */}
 			</section>
 		)
 	}
