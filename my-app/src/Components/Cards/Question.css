@@ -1,9 +1,9 @@
-.button {
+.buttonQuestion {
   background-color: var(--maincolor);
   font-weight: 700;
   letter-spacing: 2px;
   border: none;
-  color: #fff;
+  color: black;
   padding: 0.7em 1.2em;
   text-align: center;
   text-decoration: none;
@@ -13,9 +13,17 @@
   margin-top: auto;
 }
 
+.buttonQuestion:hover {
+	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.73);
+	transform: translateY(-2px);
+	border-radius: 0.5em;
+}
+
+
 .ShowAnswerButton {
   justify-content: space-between;
   flex-direction: column;
-  min-height: 20em;
+  min-height: 12.5em;
   display: flex;
+  
 }

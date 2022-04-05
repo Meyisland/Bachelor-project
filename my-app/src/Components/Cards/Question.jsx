@@ -74,7 +74,7 @@ class Question extends React.Component {
 					{showResultsBt && (
 						<div class="ShowAnswerButton">
 							<a
-								class="button"
+								class="buttonQuestion"
 								// href="#part_4"
 								onClick={() => setCardState(name, 'sequenz')}
 							>

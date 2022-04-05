@@ -1,4 +1,5 @@
 import React from 'react'
+import './FinishWrong.css'
 
 class FinishWrong extends React.Component {
 	constructor(props) {
@@ -8,10 +9,10 @@ class FinishWrong extends React.Component {
 	render() {
 		const { name, setCardState, answerTextWrong } = this.props
 		return (
-			<div>
+			<div class="textWrapper">
 				<p>{answerTextWrong}</p>
 				<a
-					class="button"
+					class="buttonWrong"
 					// href="#part_4"
 					onClick={() => setCardState(name, 'default')}
 				>

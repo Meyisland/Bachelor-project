@@ -60,7 +60,9 @@ class Chat extends Component {
 
 		const { firstAnnahme } = this.props
 		let messageItems = [firstAnnahme, messages].map((msg, index) => (
-			<li>{index + msg}</li>
+			<li>{msg}</li>
+			// Index zählt die Nachrichten
+			// <li>{index + msg}</li>
 		))
 		console.log(this.props.firstAnnahme)
 		// for (let message of messages) {
