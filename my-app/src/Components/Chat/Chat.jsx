@@ -59,8 +59,8 @@ class Chat extends Component {
 		const { messages } = this.state
 
 		const { firstAnnahme } = this.props
-		let messageItems = [firstAnnahme, messages].map((msg, index) => (
-			<li>{msg}</li>
+		let messageItems = [firstAnnahme, ...messages].map((msg, index) => (
+			<li>{index + msg}</li>
 			// Index zählt die Nachrichten
 			// <li>{index + msg}</li>
 		))
@@ -71,7 +71,7 @@ class Chat extends Component {
 		// }
 		return (
 			<div class="container">
-				<div id="messages">{messageItems}</div>
+				<ul id="messages">{messageItems}</ul>
 				<form onSubmit={(e) => this.handleSubmit(e)} id="form" action="">
 					<input
 						onChange={(e) => this.handleChange(e)}

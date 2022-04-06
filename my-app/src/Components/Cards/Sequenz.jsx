@@ -44,9 +44,45 @@ class Sequenz extends React.Component {
 		const { showFinishBt, showWrongFinishBt } = this.state
 
 		return (
-			<div>
+			<div class="FormWrapper">
 				<p>Wähle eine Sqeuenz aus:</p>
 				<form onSubmit={this.formSubmit}>
+					<div className="radio">
+						<label>
+							<input
+								type="radio"
+								value="Um X aufwärts zählen"
+								checked={this.state.selectedOption === 'Um X aufwärts zählen'}
+								onChange={this.onValueChange}
+							/>
+							Um X aufwärts zählen
+						</label>
+					</div>
+					<div className="radio">
+						<label>
+							<input
+								type="radio"
+								value="Um 2 aufwärts zählen"
+								checked={this.state.selectedOption === 'Um 2 aufwärts zählen'}
+								onChange={this.onValueChange}
+							/>
+							Um 2 aufwärts zählen
+						</label>
+					</div>
+					<div className="radio">
+						<label>
+							<input
+								type="radio"
+								value="Die ersten beiden addiert ergeben die nächste Zahl"
+								checked={
+									this.state.selectedOption ===
+									'Die ersten beiden addiert ergeben die nächste Zahl'
+								}
+								onChange={this.onValueChange}
+							/>
+							Die ersten beiden addiert ergeben die nächste Zahl
+						</label>
+					</div>
 					<div className="radio">
 						<label>
 							<input
@@ -55,32 +91,34 @@ class Sequenz extends React.Component {
 								checked={this.state.selectedOption === 'Male'}
 								onChange={this.onValueChange}
 							/>
-							Male
+							Aufsteigende Zahlen
 						</label>
 					</div>
 					<div className="radio">
 						<label>
 							<input
 								type="radio"
-								value="Female"
-								checked={this.state.selectedOption === 'Female'}
+								value="Gerade Zahlen"
+								checked={this.state.selectedOption === 'Gerade Zahlen'}
 								onChange={this.onValueChange}
 							/>
-							Female
+							Gerade Zahlen
 						</label>
 					</div>
 					<div className="radio">
 						<label>
 							<input
 								type="radio"
-								value="Other"
-								checked={this.state.selectedOption === 'Other'}
+								value="Die ersten beiden multipiziert ergeben die nächste Zahl"
+								checked={
+									this.state.selectedOption ===
+									'Die ersten beiden multipiziert ergeben die nächste Zahl'
+								}
 								onChange={this.onValueChange}
 							/>
-							Other
+							Die ersten beiden multipiziert ergeben die nächste Zahl
 						</label>
 					</div>
-					<div>Selected option is : {this.state.selectedOption}</div>
 
 					{showFinishBt ? (
 						<div class="ShowFinishButton">
