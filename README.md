@@ -6,7 +6,7 @@ Bedienungsanleitung:
 Schritt 1: Um den Prototypen zu starten ist ein Endgerät mit Browser unterstützung nötig. Zudem muss sich Node.js auf dem Rechner befinden oder sich 
 hier https://nodejs.org/en/download/ runtergeladen werden.
 
-Schritt 2: Ist die Prototyp Datei XX runtergeladen naviegriere im Terminal zu der Datei 
+Schritt 2: Ist die Prototyp Datei P7B_WS21 Prototyp Meyer_Schmidt runtergeladen naviegriere im Terminal zu der Datei 
 (Auf dem Mac geht das, indem du den Befehl “cd” eingibst und den Ordner aus dem Finder mit hilfe von drag and drop hinter den “cd” Befehl 
 ziehst und dann auf enter drückst.)  “my-app” und führe ein “npm install” im Terminal aus. Hierbei werden alle Depencies die für den Prototypen 
 laut package.json gebraucht werden automatisch heruntergeladen.
