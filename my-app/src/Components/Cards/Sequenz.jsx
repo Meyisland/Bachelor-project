@@ -88,7 +88,7 @@ class Sequenz extends React.Component {
 								class="button"
 								onClick={() => setCardState(name, 'finish')}
 							>
-								Finish2
+								Finish
 							</button>
 						</div>
 					) : (
